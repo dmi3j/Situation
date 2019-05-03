@@ -1,0 +1,7 @@
+framework module WrapperFramework [system] {
+    umbrella header "WrapperFramework.h"
+
+    export *
+    module * {export *}
+}
+

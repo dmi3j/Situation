@@ -1,0 +1,18 @@
+PODS:
+  - private-lib (0.0.1):
+    - private-lib/primaryModule (= 0.0.1)
+  - private-lib/primaryModule (0.0.1)
+
+DEPENDENCIES:
+  - private-lib (from `../PrivateLibraryProduct`)
+
+EXTERNAL SOURCES:
+  private-lib:
+    :path: "../PrivateLibraryProduct"
+
+SPEC CHECKSUMS:
+  private-lib: e4afd6f5a0bc9db26fea71c37c9aa8c99de882a0
+
+PODFILE CHECKSUM: 4178ab89e398acf6ca8d00f213f506f7b6a367c8
+
+COCOAPODS: 1.5.3

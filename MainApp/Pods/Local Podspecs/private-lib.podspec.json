@@ -1,0 +1,39 @@
+{
+  "name": "private-lib",
+  "version": "0.0.1",
+  "platforms": {
+    "ios": null
+  },
+  "summary": "Some private library",
+  "license": {
+    "type": "Proprietary",
+    "file": "License.txt"
+  },
+  "authors": "Me",
+  "source": {
+    "git": "..",
+    "tag": "0.0.1"
+  },
+  "homepage": "https://www.site.com",
+  "default_subspecs": "primaryModule",
+  "subspecs": [
+    {
+      "name": "primaryModule",
+      "ios": {
+        "vendored_frameworks": "PrivateLibrary.framework"
+      },
+      "public_header_files": "PrivateLibrary.framework/Headers/*.h",
+      "libraries": [
+        "stdc++",
+        "sqlite3",
+        "c++",
+        "iconv",
+        "z"
+      ],
+      "pod_target_xcconfig": {
+        "GCC_PREPROCESSOR_DEFINITIONS[arch=arm64]": "$(inherited)",
+        "HEADER_SEARCH_PATHS": "$(inherited)"
+      }
+    }
+  ]
+}
